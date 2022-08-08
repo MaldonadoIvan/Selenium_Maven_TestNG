@@ -34,7 +34,11 @@ public class Tests {
 	
 	public void pruebaTres() {
 		PageHome pagehome = new PageHome(driver);
-		pagehome.selectJobs("Job Titles");
+		//pagehome.selectJobs("Job Titles");
+		pagehome.selectAdmin("Admin");
+		Helpers helper = new Helpers();
+		helper.sleepSeconds(4);
+		pagehome.selectJobs("Job");
 	}
 	
 	@AfterMethod

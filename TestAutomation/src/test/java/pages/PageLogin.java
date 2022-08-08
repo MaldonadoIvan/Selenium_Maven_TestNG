@@ -12,9 +12,9 @@ public class PageLogin {
 	private By loginButton;
 	public PageLogin(WebDriver driver) {
 		this.driver = driver;
-		userField = By.name("userName");
-		passwordField = By.name("password");
-		loginButton = By.name("login");
+		userField = By.name("txtUsername");
+		passwordField = By.name("txtPassword");
+		loginButton = By.name("Submit");
 	}
 	
 	public void login(String user, String pass) {
