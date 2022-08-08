@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import helpers.Helpers;
+import pages.PageHome;
 import pages.PageLogin;
 
 public class Tests {
@@ -32,7 +33,8 @@ public class Tests {
 	}
 	
 	public void pruebaTres() {
-		Page
+		PageHome pagehome = new PageHome(driver);
+		pagehome.selectJobs("Job Titles");
 	}
 	
 	@AfterMethod

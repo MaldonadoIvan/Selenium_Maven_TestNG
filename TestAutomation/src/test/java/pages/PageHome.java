@@ -13,8 +13,8 @@ public class PageHome {
 		jobsDrop = By.id("menu_admin_Job");
 	}
 	
-	public void selectJobs(int cant) {
+	public void selectJobs(String string) {
 		Select selectJobList = new Select(driver.findElement(jobsDrop));
-		selectJobList.selectByVisibleText(null);
+		selectJobList.selectByVisibleText(string);
 	}
 }
